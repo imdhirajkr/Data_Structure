@@ -6,6 +6,14 @@ data and next. data holds the value of the current node, and next points to the 
 #include <stdio.h>
 #include <stdlib.h>
 
+/*
+
+-> This is a definition of a struct in C called Node that represents a single node of a singly linked list. It has two fields:
+-> data - This field holds the actual value or data that the node contains. In this example, it is an integer.
+-> next - This field is a pointer to the next node in the linked list. It is a self-referential pointer, meaning that it points to another Node struct of the same type. If there is no next node, the next pointer is set to NULL.
+-> By having a next pointer, we can link multiple Node structs together to form a singly linked list, where each node contains a value and a pointer to the next node in the list. This allows us to traverse the list starting from the first node (also known as the head of the list) and following the next pointers to visit each subsequent node until we reach the end of the list.
+
+*/
 struct Node {
     int data;
     struct Node* next;
