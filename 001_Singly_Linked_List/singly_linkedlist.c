@@ -11,12 +11,22 @@ struct Node {
     struct Node* next;
 };
 
+"""
+We also define a function createNode() that creates a new node with the given data and returns a pointer to it.
+"""
+
 struct Node* createNode(int data) {
     struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
     newNode->data = data;
     newNode->next = NULL;
     return newNode;
 }
+
+"""
+The function insertAtEnd() inserts a new node at the end of the linked list. 
+It takes a pointer to the head of the list, creates a new node with the given data, and adds it to the end of the list.
+    
+"""
 
 void insertAtEnd(struct Node** head, int data) {
     struct Node* newNode = createNode(data);
