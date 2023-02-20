@@ -1,7 +1,7 @@
-"""
+/*
 In this program, we define a struct Node that has two fields - 
 data and next. data holds the value of the current node, and next points to the next node in the list.
-"""
+*/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -11,9 +11,9 @@ struct Node {
     struct Node* next;
 };
 
-"""
+/*
 We also define a function createNode() that creates a new node with the given data and returns a pointer to it.
-"""
+*/
 
 struct Node* createNode(int data) {
     struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
@@ -22,11 +22,10 @@ struct Node* createNode(int data) {
     return newNode;
 }
 
-"""
+/*
 The function insertAtEnd() inserts a new node at the end of the linked list. 
 It takes a pointer to the head of the list, creates a new node with the given data, and adds it to the end of the list.
-    
-"""
+*/
 
 void insertAtEnd(struct Node** head, int data) {
     struct Node* newNode = createNode(data);
