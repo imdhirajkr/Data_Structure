@@ -38,6 +38,31 @@ struct Node* createNode(int data) {
 Step 4:
 The function insertAtEnd() inserts a new node at the end of the linked list. 
 It takes a pointer to the head of the list, creates a new node with the given data, and adds it to the end of the list.
+
+--> This is a function in C called insertAtEnd() that adds a new node with the given data value to the end of a singly linked list. 
+Here is what each line of the function does:
+
+--> struct Node* newNode = createNode(data); - This calls a function called createNode() to create a new Node struct with the given data value. 
+The new node will be the last node in the linked list.
+
+--> if (*head == NULL) { *head = newNode; return; } - This checks if the head pointer is NULL, which means that the list is empty. 
+If so, the head pointer is updated to point to the new node, and the function returns.
+
+--> struct Node* temp = *head; - This declares a pointer called temp and initializes it to the head pointer. 
+This pointer will be used to traverse the linked list and find the last node.
+
+--> while (temp->next != NULL) { temp = temp->next; } - This loops through the linked list using the temp pointer until it reaches the last node. 
+The loop condition checks if the next pointer of the current node is NULL, which means that it is the last node in the list.
+
+--> temp->next = newNode; - This updates the next pointer of the last node to point to the new node, 
+effectively adding the new node to the end of the linked list.
+
+--> The function takes in a double pointer head as its first argument because it needs to modify the head pointer itself. 
+By passing in a pointer to the head pointer, we can update the head pointer to point to the first node in the list 
+if it was previously NULL, or leave it unchanged if there were already nodes in the list.
+
+
+
 */
 
 void insertAtEnd(struct Node** head, int data) {
