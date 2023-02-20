@@ -1,3 +1,8 @@
+"""
+In this program, we define a struct Node that has two fields - 
+data and next. data holds the value of the current node, and next points to the next node in the list.
+"""
+
 #include <stdio.h>
 #include <stdlib.h>
 
