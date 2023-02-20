@@ -74,15 +74,19 @@ The insertAtEnd() function creates a new node with the value 1 and appends it to
 --> insertAtEnd(&head, 2); - This calls the insertAtEnd() function again with the address of the head pointer and the value 2. 
 The insertAtEnd() function creates a new node with the value 2 and appends it to the end of the linked list.
 
-insertAtEnd(&head, 3); - This calls the insertAtEnd() function again with the address of the head pointer and the value 3. The insertAtEnd() function creates a new node with the value 3 and appends it to the end of the linked list.
+--> insertAtEnd(&head, 3); - This calls the insertAtEnd() function again with the address of the head pointer and the value 3. 
+The insertAtEnd() function creates a new node with the value 3 and appends it to the end of the linked list.
 
-insertAtEnd(&head, 4); - This calls the insertAtEnd() function again with the address of the head pointer and the value 4. The insertAtEnd() function creates a new node with the value 4 and appends it to the end of the linked list.
+--> insertAtEnd(&head, 4); - This calls the insertAtEnd() function again with the address of the head pointer and the value 4. 
+The insertAtEnd() function creates a new node with the value 4 and appends it to the end of the linked list.
 
-printList(head); - This calls the printList() function with the head pointer as an argument. The printList() function traverses the linked list starting from the head and prints out the data in each node.
+--> printList(head); - This calls the printList() function with the head pointer as an argument. 
+The printList() function traverses the linked list starting from the head and prints out the data in each node.
 
 return 0; - This returns an exit status of 0, indicating that the program has run successfully.
 
-Overall, this main() function creates a linked list with four nodes containing the values 1, 2, 3, and 4, and then prints out the contents of the list.
+--> Overall, this main() function creates a linked list with four nodes containing 
+the values 1, 2, 3, and 4, and then prints out the contents of the list.
 
 */
 
