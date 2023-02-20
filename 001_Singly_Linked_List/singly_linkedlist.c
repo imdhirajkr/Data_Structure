@@ -68,9 +68,11 @@ This is the main() function of a C program that demonstrates the use of a singly
 
 struct Node* head = NULL; - This declares a pointer to a Node struct called head and initializes it to NULL. This will be the starting point of our linked list.
 
-insertAtEnd(&head, 1); - This calls the insertAtEnd() function with the address of the head pointer and the value 1. The insertAtEnd() function creates a new node with the value 1 and appends it to the end of the linked list.
+--> insertAtEnd(&head, 1); - This calls the insertAtEnd() function with the address of the head pointer and the value 1. 
+The insertAtEnd() function creates a new node with the value 1 and appends it to the end of the linked list.
 
-insertAtEnd(&head, 2); - This calls the insertAtEnd() function again with the address of the head pointer and the value 2. The insertAtEnd() function creates a new node with the value 2 and appends it to the end of the linked list.
+--> insertAtEnd(&head, 2); - This calls the insertAtEnd() function again with the address of the head pointer and the value 2. 
+The insertAtEnd() function creates a new node with the value 2 and appends it to the end of the linked list.
 
 insertAtEnd(&head, 3); - This calls the insertAtEnd() function again with the address of the head pointer and the value 3. The insertAtEnd() function creates a new node with the value 3 and appends it to the end of the linked list.
 
